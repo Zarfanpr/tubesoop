@@ -18,5 +18,4 @@ public class Deck {
     public void TaroBaru(int idkartu){
         this.kartuakhir++;
     } 
-// halo
 }
