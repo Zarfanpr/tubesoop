@@ -17,7 +17,9 @@ class KartuAngka extends Kartu {
     }
 
     @Override
-    void PlayEffect() {
-        
+    void PlayEffect(Player P) {
+        P.SetColorOnPlay(this.getWarna());
+        P.SetAngkaOnPlay(this.GetAngka();
+        P.SetGiliran(P.GetGiliran() + P.GetStep());
     }
 }

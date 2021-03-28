@@ -16,7 +16,10 @@ class KartuDraw2 extends Kartu{
         this.Draw = Draw;
     }
 
-    void PlayEffect(){
-        
+    void PlayEffect(Player P, Player nextPlayer){
+        P.SetColorOnPlay(this.getWarna());
+        P.SetGiliran(P.GetGiliran() + P.GetStep());
+        nextPlayer.Draw();
+        nextPlayer.Draw();
     }
 }
