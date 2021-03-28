@@ -1,6 +1,6 @@
-package Hiji;
+//package Hiji;
 
-class KartuDraw2 extends Kartu{
+public class KartuDraw2 extends Kartu{
     private int Draw;
 
     KartuDraw2(String Warna, String Tipe){
@@ -16,10 +16,8 @@ class KartuDraw2 extends Kartu{
         this.Draw = Draw;
     }
 
-    void PlayEffect(Player P, Player nextPlayer){
+    void PlayEffect(Player P){
         P.SetColorOnPlay(this.getWarna());
         P.SetGiliran(P.GetGiliran() + P.GetStep());
-        nextPlayer.Draw();
-        nextPlayer.Draw();
     }
 }

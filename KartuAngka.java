@@ -1,6 +1,6 @@
-package Hiji;
+//package Hiji;
 
-class KartuAngka extends Kartu {
+public class KartuAngka extends Kartu {
     private int Angka;
 
     KartuAngka(String Warna, int Angka){

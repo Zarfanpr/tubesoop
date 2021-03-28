@@ -1,8 +1,8 @@
-package Hiji;
+//package Hiji;
 
 import java.util.Scanner;
 
-class KartuDraw4 extends Kartu{
+public class KartuDraw4 extends Kartu{
     private int Draw;
 
     KartuDraw4(){
@@ -17,16 +17,11 @@ class KartuDraw4 extends Kartu{
         this.Draw = Draw;
     }
 
-    void PlayEffect(Player P, Player nextPlayer){
+    void PlayEffect(Player P){
         Scanner Scan = new Scanner(System.in);
         System.out.print("Masukkan warna yang diinginkan selanjutnya: ");
         String SetterWarna = Scan.next();
         P.SetColorOnPlay(SetterWarna);
-
-
-        nextPlayer.Draw();
-        nextPlayer.Draw();
-        nextPlayer.Draw();
-        nextPlayer.Draw();
+        Scan.close();
     }
 }

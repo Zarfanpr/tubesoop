@@ -1,6 +1,6 @@
-package Hiji;
+//package Hiji;
 
-abstract class Kartu{
+public abstract class Kartu{
     private String Warna = "Hitam";
     private String Tipe;
     
