@@ -1,4 +1,4 @@
-public class Deck {
+public class Deck { //masih bentuk integer
     static int kartuawal;
     static int kartuakhir;
     public int[] arr; 
@@ -6,16 +6,43 @@ public class Deck {
     // arr[0] = 3;
 
     public Deck (int kartuakhir){
-        this.kartuakhir = kartuakhir;
-        this.kartuawal = 0;
+        Deck.kartuakhir = kartuakhir-1;
+        Deck.kartuawal = 0;
+        this.arr = new int[kartuakhir];
         // this.arr = new int[jumlahkartu];
     }
 
-    public void KeluarinKartu(int idkartu){
-        this.kartuawal++;
+    public void makeDeck(){
+    int jumlahkartu = kartuakhir - kartuawal;
+        for (int i=0; i<jumlahkartu; i++){
+            arr[i] = i+1;
+        }
+    }
 
+    public int KeluarinKartu(){
+        int kartukeluar = arr[kartuawal];
+        kartuawal++;
+        return (kartukeluar);
     } 
     public void TaroBaru(int idkartu){
-        this.kartuakhir++;
+        setkartuakhir(getkartuakhir()+1);
+        arr[kartuakhir] = idkartu;
     } 
+
+    public static int getkartuakhir(){
+        return kartuakhir;
+    }
+
+    public void setkartuakhir(int kartuakhir){
+        Deck.kartuakhir = kartuakhir;
+    }
+
+    public static int getkartuawal(){
+        return kartuawal;
+    }
+
+    public void setkartuawal(int kartuawal){
+        Deck.kartuawal = kartuawal;
+    }
+
 }
