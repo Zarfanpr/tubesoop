@@ -3,8 +3,8 @@ package Hiji;
 class KartuAngka extends Kartu {
     private int Angka;
 
-    KartuAngka(String Warna, String Tipe, int Angka){
-        super(Warna,Tipe);
+    KartuAngka(String Warna, int Angka){
+        super(Warna,"Angka");
         this.Angka = Angka;
     }
 

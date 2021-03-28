@@ -29,7 +29,5 @@ abstract class Kartu{
         this.Tipe = Tipe;
     }
 
-    void PlayEffect(Player P){
-        
-    }
+    abstract void PlayEffect(Player P);
 }

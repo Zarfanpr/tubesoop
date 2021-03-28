@@ -4,7 +4,7 @@ class KartuDraw2 extends Kartu{
     private int Draw;
 
     KartuDraw2(String Warna, String Tipe){
-        super(Warna,Tipe);
+        super(Warna,"Draw2");
         this.Draw = 2;
     }
 

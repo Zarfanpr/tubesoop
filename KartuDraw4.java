@@ -5,8 +5,8 @@ import java.util.Scanner;
 class KartuDraw4 extends Kartu{
     private int Draw;
 
-    KartuDraw4(String Tipe){
-        super(Tipe);
+    KartuDraw4(){
+        super("Draw4");
         this.Draw = 4;
     }
     int getDrawEffect(){
