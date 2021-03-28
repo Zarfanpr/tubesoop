@@ -5,8 +5,8 @@ public class Driverdeck {
     public static void main(String[] args) {
 
         Deck dek = new Deck(7);
-        System.out.println(dek.kartuakhir);
-        System.out.println(dek.kartuawal);
+        System.out.println(Deck.getkartuakhir());
+        System.out.println(Deck.getkartuawal());
         dek.makeDeck();
         System.out.println(dek.arr[4]);
         System.out.println(dek.KeluarinKartu());
