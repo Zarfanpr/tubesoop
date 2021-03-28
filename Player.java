@@ -8,7 +8,7 @@ class Player{
     static int AngkaOnPlay;
 
 
-    List<Kartu> Hand;
+    private List<Kartu> Hand = new ArrayList<Kartu>();
     int JumlahKartu;
     int Urutan;
 
@@ -34,8 +34,13 @@ class Player{
         return this.Step;
     }
 
-    void Draw(){
+    void Draw(Kartu kartu){
+        list.add(kartu);
+    }
+
+    void isjumlahkartuHiji(){
 
     }
+
 
 }

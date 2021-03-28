@@ -19,7 +19,7 @@ class KartuDraw4 extends Kartu{
 
     void PlayEffect(Player P, Player nextPlayer){
         Scanner Scan = new Scanner(System.in);
-        System.out.print("Masukkan warna yang diinginkan selanjutnya: ")
+        System.out.print("Masukkan warna yang diinginkan selanjutnya: ");
         String SetterWarna = Scan.next();
         P.SetColorOnPlay(SetterWarna);
 
